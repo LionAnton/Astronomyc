@@ -912,16 +912,32 @@ div#dopBox {
         margin-bottom: 12px;
     }
     .containerN {
-        grid-template-rows: 146px 195px 351px;
+        grid-template-rows: 145px 200px 351px;
         grid-template-columns: 100%;
     width: 335px;
     }
-
+    #menu a {
+        display: block;
+        line-height: 18px;
+        left: 0px;
+        top: 0px;
+        position: relative;
+        color: white;
+        font-size: 9px;
+    }
+    #menu {
+        position: absolute;
+        width: 235px;
+        top: 121px;
+        left: 28%;
+        transition: 1s;
+        background: #123;
+        opacity: 0.8;
+    }
     .text1 div {
         display: inline-block;
         padding: 18px;
         margin: 14px;
-        /* height: 80px; */
         width: 71%;
     }
 
@@ -1075,6 +1091,14 @@ div#dopBox {
         div#sputnic {
             grid-row-start: 3;
         }
+        .sputnik {
+            position: absolute;
+            left: 20%;
+            top: 0%;
+            height: 100px;
+            offset-path: path("M649.5 250C649.5 318.848 613.223 381.213 554.505 426.38C495.786 471.549 414.646 499.5 325 499.5C235.354 499.5 154.214 471.549 95.4951 426.38C36.7769 381.213 0.5 318.848 0.5 250C0.5 181.152 36.7769 118.787 95.4951 73.6196C154.214 28.4513 235.354 0.5 325 0.5C414.646 0.5 495.786 28.4513 554.505 73.6196C613.223 118.787 649.5 181.152 649.5 250Z");
+            animation: move 10s linear infinite;
+        }
         #bssr {
             opacity: 0.6;
             width: 80%;
@@ -1110,6 +1134,7 @@ div#dopBox {
         }
         .wr .f2 section.figSection img:nth-child(2) {
             left: 50px;
+            top: 5px;
         }
         div#testQwest h2 {
             text-align: center;
