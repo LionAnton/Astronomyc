@@ -1106,10 +1106,15 @@ div#dopBox {
             top: 103px;
             left: 4px;
         }
+        .wrapper div:nth-child(1) p {
+            margin: 5px 0 0 0;
+            position: relative;
+            left: 7px;
+        }
         .wr {
-            width: 300px;
-    grid-template-columns: 119%;
-    grid-template-rows: 159px 253px 253px 253px 253px 253px 253px;
+            width: 380px;
+            grid-template-columns: 100%;
+            grid-template-rows: 159px 253px 253px 253px 253px 253px 253px;
         }
 
         figcaption.strText {
