@@ -267,8 +267,7 @@ line-height: 26px;
     height: 520px;
 }
 .box img{
-    max-height: 50%; 
-
+    max-height: 61%; 
    opacity: 0.8;
    left: 30%;
   
@@ -883,6 +882,9 @@ div#dopBox {
         grid-row-start: 2;
         grid-column-start:1;
     } 
+    .box1 {
+        grid-template-columns: 41% 40%;
+    }
     .containerN .collumnsN:nth-child(4){
         grid-row-start: 10;
         grid-column-start:1;
@@ -910,10 +912,9 @@ div#dopBox {
         margin-bottom: 12px;
     }
     .containerN {
-        grid-template-rows: 146px 159px 333px;
+        grid-template-rows: 146px 195px 351px;
         grid-template-columns: 100%;
-    width: 375px;
-    margin: 0 0;
+    width: 335px;
     }
 
     .text1 div {
@@ -924,12 +925,8 @@ div#dopBox {
         width: 71%;
     }
 
-    a.strelka2 img {
-        margin: -26px;
-    }
-
     .strText {
-        font-size: 23px;
+        font-size: 17px;
     }
     #stars{
         width: 3px;
@@ -945,4 +942,213 @@ div#dopBox {
         border-radius: 50%;
         animation: rot 270s infinite linear;
     }
-  }
+    div#sputnic img {
+        width: 150px;
+    }
+    .containerN .collumnsN:nth-child(2) p {
+        font-size: 22px;
+    }
+    .box img {
+        margin: 40px;
+        max-height: 47%;
+    }
+    .dog {
+        position: relative;
+        height: 400px;
+    }
+    .dog img:nth-child(1) {
+        left: 0px;
+        /* margin-bottom: -8px; */
+        min-height: 73%;
+        /* max-width: 100%; */
+        width: 327px;
+    }
+    .dog img:nth-child(2) {
+        left: 37%;
+        top: 20%;
+    }
+    video {
+        max-width: 94%;
+        padding: 4px;
+    }
+    figcaption.strText {
+        font-size: 10px;
+    }
+    .caption-border:nth-child(2) {
+        left: 24%;
+        top: 10px;
+    }
+    .wrapper {
+        width: 356px;
+        margin: 2px 2px;
+        grid-template-columns: 100%;
+        grid-template-rows: 116px 253px 253px 253px 253px 253px 253px;
+        left: -20px;
+        position: relative;
+    }
+    .wrapper div:nth-child(1){
+        grid-column-start: 1;
+        grid-column-end: -1;
+        }
+        .caption-border:nth-child(2) {
+            grid-row-start: 9;
+            grid-row-end: 9;
+            position: relative;
+            left: 19%;
+            width: 80%;
+        }
+        figure.caption-border img {
+            max-height: 73%;
+        }
+
+        #container3 {
+            grid-template-columns: 100%;
+            width: 338px;
+        margin: 0 0;
+        }
+        .box {
+            grid-row-start: 2;
+        }
+        div#sputnic {
+            grid-row-start: 3;
+        }
+        #bssr2 {
+            opacity: 0.6;
+            width: 30%;
+            animation: move3 4s linear infinite;
+        }
+        .Club img {
+            position: relative;
+            top: 6px;
+            left: 5px;
+        }
+        #sssr {
+            width: 75%;
+            position: relative;
+            top: 10px;
+    left: 26px;
+        }
+.falAnsv {
+    border: 17px dotted red;
+    padding: 10px 0px;
+    width: 112%;
+    position: relative;
+    left: -56px;
+}
+.trAnsv {
+    border: 17px dotted green;
+    padding: 10px 0;
+    width: 112%;
+    position: relative;
+    left: -56px;
+}
+        .Country1 {
+            grid-template-rows: 600px;
+            grid-template-columns: 148px;
+        }
+        div#dopBox {
+            grid-template-columns: 28% 17% 42%;
+            grid-template-rows: 510px;
+        }
+        .box img {
+            margin: 0px;
+        }
+        .block ul {
+            position: relative;
+            top: 82px;
+        }
+        #dop {
+            position: relative;
+            left: -44px;
+            top: -96px;
+        }
+        p.belP {
+            font-size: 16px;
+        }
+        .text1 p {
+            font-size: 15px;
+        }
+        div#dopBox {
+            grid-template-columns: 28% 14% 58%;
+            grid-template-rows: 510px;
+        }
+        div#sputnic {
+            grid-row-start: 3;
+        }
+        #bssr {
+            opacity: 0.6;
+            width: 80%;
+            position: relative;
+            top: 103px;
+            left: 4px;
+        }
+        .wr {
+            width: 300px;
+    grid-template-columns: 119%;
+    grid-template-rows: 159px 253px 253px 253px 253px 253px 253px;
+        }
+
+        figcaption.strText {
+            margin-top: 6px;
+    width: 313px;
+        }
+        .wrapper div:nth-child(1) p:nth-child(1) {
+            margin-top: 4px;
+            font-size: 19px;
+        }
+        .wr figure.caption-border {
+            display: grid;
+            grid-template-rows: 70% 30%;
+            justify-items: center;
+            margin: 0;
+            margin-top: 20px;
+        }
+        .caption-border a img.changable-image {
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+        .wr .f2 section.figSection img:nth-child(2) {
+            left: 50px;
+        }
+        div#testQwest h2 {
+            text-align: center;
+            color: #fff;
+            line-height: 22px;
+            padding-bottom: 16px;
+            padding-top: 20px;
+            font-size: 16px;
+        }
+        #container4 {
+            display: grid;
+            grid-template-columns: 3% 94% 3%;
+        }
+        #spio {
+            grid-column-start: 2;
+        }
+        label.answ {
+            display: block;
+            margin: 24px 2px 11px 25px;
+            font-size: 20px;
+        }
+        #rezult button {
+            width: 100%;
+            height: 100%;
+            font-size: 23px;
+            font-weight: 700;
+            border: solid;
+            font-family: 'Minor';
+            padding: 20px 0;
+            color: white;
+            background: #284066;
+            cursor: pointer;
+        }
+        div#listAnswer h2, div#listAnswer h3, div#listAnswer p.p {
+            text-align: center;
+            margin: 19px 0;
+            font-size: 20px;
+        }
+        .str2.str3 a:nth-child(2) {
+            line-height: 39px;
+        }
+    }

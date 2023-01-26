@@ -335,18 +335,40 @@ item.addEventListener('click',replaseImg7)
 //=============
 //=====================bssr
 let dx=2; let x0=0
-let bssr=document.getElementById('bssr')
-if(bssr!=null){
-    bssrMove();
+  let bssr=document.getElementById('bssr');
+ // if(bssr!=null){
+      //    bssrMove();
+        // }
+//Функция
+function move(){
+	const viewport_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+	if (viewport_width <= 430) {
+		if(bssr!=null){
+            bssrMoved();
+           }
+	} else {
+		if(bssr!=null){
+            bssrMove();
+           }
+	}
 }
-
-function  bssrMove(){
+  function  bssrMove(){
+      console.log(x0)
+      if(x0<550){
+      x0=x0+dx
+      bssr.style.left=`${x0}px`;
+      setTimeout('bssrMove()',20)
+  }}
+  function  bssrMoved(){
     console.log(x0)
-    if(x0<550){
+    if(x0<200){
     x0=x0+dx
     bssr.style.left=`${x0}px`;
-    setTimeout('bssrMove()',20)
+    setTimeout('bssrMoved()',20)
 }}
+  window.addEventListener('resize', move);
+move();
+
 //==========================
 //==========================
 const arrayRis=['01','09','04','07','05','08','02','06','03'];
