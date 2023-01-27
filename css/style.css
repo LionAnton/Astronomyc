@@ -1250,4 +1250,7 @@ div#dopBox {
             animation: move 7s linear infinite;
             width: 150px;
         }
+        body {
+            overflow:hidden;
+        }
     }
