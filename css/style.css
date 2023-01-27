@@ -1251,6 +1251,6 @@ div#dopBox {
             width: 150px;
         }
         body {
-            overflow:hidden;
+            overflow:auto;
         }
     }
