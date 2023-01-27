@@ -279,8 +279,8 @@ a img:hover{
 .sputnik{
     position: absolute;
     left: 20%;
-    top: 0%;
-   max-height: 30%;
+    top: 30%;
+   height: 100px;
     offset-path: path("M649.5 250C649.5 318.848 613.223 381.213 554.505 426.38C495.786 471.549 414.646 499.5 325 499.5C235.354 499.5 154.214 471.549 95.4951 426.38C36.7769 381.213 0.5 318.848 0.5 250C0.5 181.152 36.7769 118.787 95.4951 73.6196C154.214 28.4513 235.354 0.5 325 0.5C414.646 0.5 495.786 28.4513 554.505 73.6196C613.223 118.787 649.5 181.152 649.5 250Z");
     animation: move 10s linear infinite;
 }
@@ -914,7 +914,7 @@ div#dopBox {
     .containerN {
         grid-template-rows: 145px 200px 351px;
         grid-template-columns: 100%;
-    width: 335px;
+    width: 309px;
     }
     #menu a {
         display: block;
@@ -966,7 +966,7 @@ div#dopBox {
     }
     .box img {
         margin: 40px;
-        max-height: 47%;
+        max-height: 40%;
     }
     .dog {
         position: relative;
@@ -1068,6 +1068,7 @@ div#dopBox {
         }
         .box img {
             margin: 0px;
+            max-height: 40%;
         }
         .block ul {
             position: relative;
@@ -1094,9 +1095,9 @@ div#dopBox {
         .sputnik {
             position: absolute;
             left: 20%;
-            top: 0%;
+            top: 20%;
             height: 100px;
-            offset-path: path("M649.5 250C649.5 318.848 613.223 381.213 554.505 426.38C495.786 471.549 414.646 499.5 325 499.5C235.354 499.5 154.214 471.549 95.4951 426.38C36.7769 381.213 0.5 318.848 0.5 250C0.5 181.152 36.7769 118.787 95.4951 73.6196C154.214 28.4513 235.354 0.5 325 0.5C414.646 0.5 495.786 28.4513 554.505 73.6196C613.223 118.787 649.5 181.152 649.5 250Z");
+            offset-path: path("M239.5 126.5C239.5 196.113 185.973 252.5 120 252.5C54.0265 252.5 0.5 196.113 0.5 126.5C0.5 56.8869 54.0265 0.5 120 0.5C185.973 0.5 239.5 56.8869 239.5 126.5Z");
             animation: move 10s linear infinite;
         }
         #bssr {
@@ -1235,4 +1236,19 @@ div#dopBox {
             display: block;
             margin: 34px 80px;
         }
+        .img3 {
+            position: absolute;
+            left: 500px;
+            offset-path: path("M192.5 122C192.5 189.218 149.416 243.5 96.5 243.5C43.5836 243.5 0.5 189.218 0.5 122C0.5 54.7818 43.5836 0.5 96.5 0.5C149.416 0.5 192.5 54.7818 192.5 122Z");
+            animation: move 10s linear infinite;
+            width: 150px;
+        }
+        .img {
+            position: absolute;
+            left: 400px;
+            offset-path: path("M192.5 122C192.5 189.218 149.416 243.5 96.5 243.5C43.5836 243.5 0.5 189.218 0.5 122C0.5 54.7818 43.5836 0.5 96.5 0.5C149.416 0.5 192.5 54.7818 192.5 122Z");
+            animation: move 7s linear infinite;
+            width: 150px;
+        }
+        
     }
