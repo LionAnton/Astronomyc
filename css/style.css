@@ -882,6 +882,9 @@ div#dopBox {
         grid-row-start: 2;
         grid-column-start:1;
     } 
+    .str2.str3 a:nth-child(1) {
+        line-height: 20px;
+    }
     .box1 {
         grid-template-columns: 41% 40%;
     }
@@ -996,10 +999,10 @@ div#dopBox {
     }
     .wrapper {
         width: 356px;
-        margin: 2px 2px;
+        /*margin: 2px 2px;*/
         grid-template-columns: 100%;
         grid-template-rows: 116px 253px 253px 253px 253px 253px 253px;
-        left: -20px;
+       /* left: -20px;*/
         position: relative;
     }
     .wrapper div:nth-child(1){
@@ -1020,7 +1023,7 @@ div#dopBox {
         #container3 {
             grid-template-columns: 100%;
             width: 338px;
-        margin: 0 0;
+            margin: 0 auto;
         }
         .box {
             grid-row-start: 2;
@@ -1116,6 +1119,7 @@ div#dopBox {
             width: 380px;
             grid-template-columns: 100%;
             grid-template-rows: 159px 253px 253px 253px 253px 253px 253px;
+            margin: 0 auto;
         }
 
         figcaption.strText {
@@ -1249,6 +1253,13 @@ div#dopBox {
             offset-path: path("M192.5 122C192.5 189.218 149.416 243.5 96.5 243.5C43.5836 243.5 0.5 189.218 0.5 122C0.5 54.7818 43.5836 0.5 96.5 0.5C149.416 0.5 192.5 54.7818 192.5 122Z");
             animation: move 7s linear infinite;
             width: 150px;
+        }
+        .sobaki {
+            opacity: 1;
+            width: 100px;
+            height: 100px;
+            offset-path: path("M192.5 122C192.5 189.218 149.416 243.5 96.5 243.5C43.5836 243.5 0.5 189.218 0.5 122C0.5 54.7818 43.5836 0.5 96.5 0.5C149.416 0.5 192.5 54.7818 192.5 122Z");
+            animation: move 10s linear infinite;
         }
         body {
             overflow:scroll;
