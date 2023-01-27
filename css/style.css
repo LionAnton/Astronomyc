@@ -1213,7 +1213,7 @@ div#dopBox {
             width: 370px;
             display: grid;
             grid-template-columns: repeat(3, 122px);
-            grid-template-rows: 100px 100px 100px;
+            grid-template-rows: 80px 80px 80px;
         }
         .wrPazl {
             margin-top: 187px;
