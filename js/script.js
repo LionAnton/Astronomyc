@@ -378,36 +378,63 @@ for(let i=0;i<arrayRis.length;i++){
     zon1.innerHTML+=`<img src="img/k_${arrayRis[i]}.gif" id="${i}" draggable="true">`
     console.log(i)
 }
-
- 
-const dragstart2=function(event){
-     event.dataTransfer.setData('id',event.target.id)
-    console.log(event.target.id)
-}
-const images2=document.querySelectorAll('#zone1 img') //коллекция
-console.log(images2)
-Array.from(images2).forEach((element)=>{element.addEventListener('dragstart',dragstart2)})
-
-const dragover2=function(event){
-
-    event.preventDefault()
-
-}
-const drop2=function(event){
-     event.preventDefault()
-     if(event.target.tagName==='IMG') return;
-     let imageId=event.dataTransfer.getData('id')
-     console.log(imageId)
-     event.target.appendChild(document.getElementById(imageId))
-
-}
-
-//====================
+const viewport_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+	if (viewport_width <= 430) {
+        //здесь то что для мобилки
+        var cols = document.querySelectorAll('#containerPazl .col7');
+        [].forEach.call(cols, function (col) {
+            col.addEventListener('dragstart', handleDragStart,false);
+            col.addEventListener('drop', handleDrop,false);
+        });
+    
+        var dragSrcEl = null;
+        function handleDragStart(e) {
+            e.dataTransfer.setData('id',e.target.id)
+            console.log(e.target.id)
+        }
+        const images2=document.querySelectorAll('#zone1 img') //коллекция
+       console.log(images2)
+       Array.from(images2).forEach((element)=>{element.addEventListener('dragstart',handleDragStart)})
+        function handleDragOver(e) {
+                e.preventDefault();
+        }
+        function handleDrop(e) {
+            e.preventDefault()
+            if(e.target.tagName==='IMG') return;
+            let imageId=e.dataTransfer.getData('id')
+            console.log(imageId)
+            e.target.appendChild(document.getElementById(imageId))
+        }
+	} else {
+		//здесь то что для пк
+        const dragstart2=function(event){
+            event.dataTransfer.setData('id',event.target.id)
+           console.log(event.target.id)
+       }
+       const images2=document.querySelectorAll('#zone1 img') //коллекция
+       console.log(images2)
+       Array.from(images2).forEach((element)=>{element.addEventListener('dragstart',dragstart2)})
+       
+       const dragover2=function(event){
+       
+           event.preventDefault()
+       }
+       const drop2=function(event){
+            event.preventDefault()
+            if(event.target.tagName==='IMG') return;
+            let imageId=event.dataTransfer.getData('id')
+            console.log(imageId)
+            event.target.appendChild(document.getElementById(imageId))
+       
+       }
+       //====================
 const cells2=document.querySelectorAll('#containerPazl .col7')
 Array.from(cells2).forEach((element)=>{
     element.addEventListener('dragover',dragover2)
     element.addEventListener('drop',drop2)
 });
+	}
+ 
 /*====================Victorina==============*/
 const Victorina=[
     {
