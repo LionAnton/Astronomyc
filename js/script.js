@@ -202,12 +202,45 @@ item.addEventListener('click',replaseImg4)
 }); 
 //=======================================
 //=======================================
-const dragstart=function(event){
-    event.dataTransfer.setData('id',event.target.id)
-   // console.log(event.target.id)
+
+const viewport_widt = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+if(viewport_widt<=430){
+//здесь то что для мобилки
+var cols = document.querySelectorAll('#container1 .col2');
+[].forEach.call(cols, function (col) {
+    col.addEventListener('dragover', handleDragOver, false);
+    col.addEventListener('drop', handleDrop,false);
+});
+var dragSrcEl = null;
+        function handleDragStart(e) {
+            e.dataTransfer.setData('id',e.target.id)
+            console.log(e.target.id)
+        }
+        const images=document.querySelectorAll('#container1 .col1 img')
+Array.from(images).forEach((element)=>{
+    element.addEventListener('dragstart', handleDragStart)
+});
+function handleDragOver(e) {
+    e.preventDefault();
 }
-
-
+function handleDrop(e) {
+    e.preventDefault();
+  let attr= e.target.dataset.num;
+    console.log(attr)//id блока
+     let pict=e.dataTransfer.getData('id') //attrib picture
+     if(attr==pict){
+        e.target.style.border='0'
+     e.target.appendChild(document.getElementById(pict))
+     }
+        else return;
+    //console.log(pict)
+}
+}
+else{
+    const dragstart=function(event){
+        event.dataTransfer.setData('id',event.target.id)
+       // console.log(event.target.id)
+    }
 const images=document.querySelectorAll('#container1 .col1 img')
 Array.from(images).forEach((element)=>{
     element.addEventListener('dragstart', dragstart)
@@ -236,6 +269,7 @@ Array.from(cells).forEach((element)=>{
     element.addEventListener("dragover",dragover)
     element.addEventListener("drop",drop)
 })
+}
 //==============================
 //================================
 function replaseImg5(event){
@@ -383,7 +417,6 @@ const viewport_width = Math.max(document.documentElement.clientWidth, window.inn
         //здесь то что для мобилки
         var cols = document.querySelectorAll('#containerPazl .col7');
         [].forEach.call(cols, function (col) {
-            col.addEventListener('dragstart', handleDragStart,false);
             col.addEventListener('dragover', handleDragOver, false);
             col.addEventListener('drop', handleDrop,false);
         });
