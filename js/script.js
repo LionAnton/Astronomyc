@@ -384,7 +384,7 @@ const viewport_width = Math.max(document.documentElement.clientWidth, window.inn
         var cols = document.querySelectorAll('#containerPazl .col7');
         [].forEach.call(cols, function (col) {
             col.addEventListener('dragstart', handleDragStart,false);
-            col.addEventListener('drop', (handleDrop)=>handleDrop.preventDefault(),false);
+            col.addEventListener('drop',false);
         });
     
         var dragSrcEl = null;
