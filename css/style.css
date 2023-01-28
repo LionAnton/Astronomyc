@@ -951,7 +951,7 @@ div#dopBox {
         width: 3px;
         height: 3px;
         background: #fff;
-        position: absolute;
+        position: fixed;
         left: 0;
         right: 0;
         margin: 0 auto;
@@ -1117,7 +1117,7 @@ div#dopBox {
         }
         .wr {
             width: 380px;
-            grid-template-columns: 100%;
+            grid-template-columns: 99%;
             grid-template-rows: 159px 253px 253px 253px 253px 253px 253px;
             margin: 0 auto;
         }
@@ -1201,7 +1201,7 @@ div#dopBox {
             display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 100px;
-    grid-template-rows: 13px 80px 80px 80px 80px 76px 35px;
+    grid-template-rows: 13px 80px 80px 80px 80px 80px 35px;
         }
         #container1 img {
             border-radius: 8px;
@@ -1225,6 +1225,7 @@ div#dopBox {
             grid-template-columns: 369px;
             align-items: center;
             justify-content: revert;
+            margin-left: 15px;
         }
         #zone1 {
             text-align: center;
@@ -1266,5 +1267,16 @@ div#dopBox {
         }
         .strText {
             font-size: 15px;
+        }
+        #zone1 img {
+            display: inline-block;
+            max-height: 100%;
+            margin-left: 4px;
+            box-shadow: 1px 1px 30px #e0eaf3;
+            max-width: 100%;
+        }
+        .col7 img {
+            min-width: 122px;
+            width: 80px;
         }
     }
