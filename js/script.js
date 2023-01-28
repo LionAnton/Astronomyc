@@ -25,8 +25,16 @@ var boxshadow = "";
     stars.style.boxShadow = boxshadow;
 
 //===============================
-
-
+var lastY = 1;
+document.addEventListener("touchmove", function (event) {
+    var lastS = document.documentElement.scrollTop;
+    if(lastS == 0 && (lastY-event.touches[0].clientY)<0 && event.cancelable){
+        event.preventDefault(); 
+        event.stopPropagation();
+    }
+    lastY = event.touches[0].clientY;
+},{passive: false});
+//===============================
 
 const container=document.getElementById('container')
 const box1=document.querySelector('.box1')
